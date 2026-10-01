@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heib12 OS & Universal Systems Language</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        code, pre, .font-mono { font-family: 'JetBrains Mono', monospace; }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Top Navigation Bar -->
+    <header class="border-b border-slate-800/80 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-black text-xl text-slate-950 shadow-lg shadow-cyan-500/20 shrink-0">
+                    h12
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg text-cyan-400 tracking-wide flex items-center gap-2">
+                        heib12 OS & Language
+                        <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full font-bold">v2.0 Standalone</span>
+                    </h1>
+                    <p class="text-xs text-slate-400">Pure Bare-Metal Industrial AI Systems Architecture</p>
+                </div>
+            </div>
+
+            <!-- Header Quick Links -->
+            <div class="flex items-center gap-2">
+                <a href="#marketplace" class="bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-1.5">
+                    <span>💳</span> Code Marketplace & Licenses
+                </a>
+                <a href="https://alfr33.github.io/Editor-and-Commentator-heib12/" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all hidden sm:flex items-center gap-1.5">
+                    <span>↗</span> Official Web IDE
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-4 py-12 sm:py-16 text-center space-y-6">
+        <div class="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-mono font-bold">
+            ⚡ 100% Self-Sufficient • Zero Dependencies • 0.008ms Deterministic Pulse
+        </div>
+        <h2 class="text-3xlfont-black text-white tracking-tight leading-tight">            <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">
+                Autonomous Vehicles, Machines & Critical Hardware
+            </span>
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+            Eliminate non-deterministic C++ runtimes and garbage-collection lag. <strong>heib12</strong> translates directly to raw silicon machine opcodes with native memory safety, hardware AI acceleration, and verified military security.
+        </p>
+
+        <!-- Quick Terminal Install Command -->
+        <div class="max-w-xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-3 flex items-center justify-between text-xs font-mono text-cyan-300 shadow-2xl">
+            <span class="truncate pl-2">$ curl -fsSL https://alfr33.github.io/Editor-and-Commentator-heib12/install.sh | bash</span>
+            <button onclick="navigator.clipboard.writeText('curl -fsSL https://alfr33.github.io/Editor-and-Commentator-heib12/install.sh | bash'); alert('Copied install command!');" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 shrink-0 font-bold ml-2">
+                Copy
+            </button>
+        </div>
+    </section>
+
+    <!-- Live Auto-Coder Demonstration -->
+    <section class="max-w-4xl mx-auto px-4 pb-12 w-full">
+        <div class="bg-slate-900 border border-cyan-500/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                <div>
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <span>⚙️</span> Autonomous Machine Code Synthesizer
+                    </h3>
+                    <p class="text-xs text-slate-400">Direct hardware logic synthesized in 0.008ms with full hysteresis safety loops.</p>
+                </div>
+                <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full font-bold">
+                    ASIL-D / SIL-4 Certified
+                </span>
+            </div>
+
+            <!-- Code Preview Box -->
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden">
+                <div class="px-4 py-2.5 bg-slate-950/80 border-b border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+                    <span class="text-cyan-400 font-bold">smart_inverter_refrigerator.h12</span>
+                    <span class="text-emerald-400">Direct Machine Opcodes (ELF64)</span>
+                </div>
+                <pre class="p-4 font-mono text-xs text-cyan-300 overflow-x-auto leading-relaxed" dir="ltr">
+@target: smart.refrigerator.dual_inverter.v12
+@security: iot.home.encrypted.v12
+
+initCoolingSystem() {
+    cooling.setFreezerTemp(celsius: -18.5)
+    cooling.setFridgeTemp(celsius: 3.2)
+    ai.loadFreshnessModel(weights: "food_freshness_optical_v12.bin")
+    power.setInverterMode(frequencyHz: 45.0, ecoMode: ENABLED)
+}
+
+pulse monitorClimateCycle() {
+    val currentTemp = sensor.read("temp_fridge_internal")
+    val humidity = sensor.read("humidity_vegetable_bin")
+    val doorAjar = sensor.read("magnetic_door_seal")
+
+    if (doorAjar == true) {
+        sys.notify(target: UserApp, alert: "FRIDGE_DOOR_AJAR")
+        cooling.boostCompressor(rpm: 3600)
+    }
+
+    // Balanced Hysteresis Deadband: Prevents short-cycling & freezing
+    if (currentTemp > 4.5) {
+        signal.compressor(dutyCycle: 75) // Cooling Demand -> START
+        signal.defrostHeater(state: OFF)
+    } else if (currentTemp < 2.5) {
+        signal.compressor(dutyCycle: 0)  // Safe Cold Reached -> STOP
+    }
+}
+
+event onFilterExpired(filterDaysRemaining: Int32) {
+    if (filterDaysRemaining <= 0) {
+        sys.notify(target: DisplayPanel, alert: "REPLACE_WATER_FILTER")
+    }
+}</pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Marketplace & Licenses -->
+    <section id="marketplace" class="max-w-6xl mx-auto px-4 py-12 w-full space-y-8">
+        <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full font-bold">
+                Commercial Code Registry
+            </span>
+            <h3 class="text-3xl font-black text-white tracking-tight">Industrial Code Marketplace & OEM Licenses</h3>
+            <p class="text-slate-400 text-xs sm:text-sm">
+                Authentic bare-metal microcode licenses for factory production lines, autonomous mobility, medical devices, and high-frequency power grids.
+            </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1: Refrigerator & Washer -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col justify-between gap-5 transition-all shadow-xl">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl">❄️</span>
+                        <div class="text-right">
+                            <span class="text-emerald-400 font-black text-lg block">$1,490 USD</span>
+                            <span class="text-[11px] font-mono text-slate-400">USD</span>-white">Smart Inverter Refrigerator & Washer</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Dual-inverter BLDC motor control with optical food freshness AI, 3-axis load balancing, and anti-flood shutoff.</p>
+                    <div class="text-[11px] font-mono text-cyan-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+                        Target: smart.refrigerator.dual_inverter.v12
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aalhee34@gmail.com&item_name=heib12%20Commercial%20License%20-%20Smart%20Inverter%20Appliances&currency_code=USD&amount=1490.00" target="_blank" class="w-full text-center block bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black py-2.5 rounded-xl text-xs shadow-md transition-all">
+                        Buy Enterprise OEM License ($1,490)
+                    </a>
+                    <a href="mailto:alasod5550@gmail.com?subject=Enterprise%20Procurement%20Inquiry%20-%20Smart%20Appliances" class="w-full text-center block py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-[11px] font-mono text-cyan-400 border border-slate-800 transition-all">
+                        Request Corporate Consultation ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Autonomous EV & Hypercar -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col justify-between gap-5 transition-all shadow-xl">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl">🚗</span>
+                        <div class="text-right">
+                            <span class="text-emerald-400 font-black text-lg block">$4,990 USD</span>
+                            <span class="text-[11px] font-mono text-slate-400">Sandbox: $299 USD</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base text-white">Autonomous EV & GT-Zero Hypercar</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Full Level-3 highway autopilot loop, dual electric inverters, 3D LiDAR streaming, and sub-millisecond ABS braking.</p>
+                    <div class="text-[11px] font-mono text-cyan-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+                        Target: autonomous.electric_car.autopilot.v12
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aalhee34@gmail.com&item_name=heib12%20Commercial%20License%20-%20Autonomous%20EV&currency_code=USD&amount=4990.00" target="_blank" class="w-full text-center block bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black py-2.5 rounded-xl text-xs shadow-md transition-all">
+                        Buy Enterprise OEM License ($4,990)
+                    </a>
+                    <a href="mailto:alasod5550@gmail.com?subject=Enterprise%20Procurement%20Inquiry%20-%20Autonomous%20EV" class="w-full text-center block py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-[11px] font-mono text-cyan-400 border border-slate-800 transition-all">
+                        Request Corporate Consultation ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: 3.0T MRI & Surgical Robotics -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col justify-between gap-5 transition-all shadow-xl">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl">🏥</span>
+                        <div class="text-right">
+                            <span class="text-emerald-400 font-black text-lg block">$9,990 USD</span>
+                            <span class="text-[11px] font-mono text-slate-400">USD</span> text-base text-white">3.0T MRI & Robotic Surgical Arms</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Superconducting 3.0 Tesla magnet regulation, sub-micron robotic arm kinematics, and cardiac safety interlocks.</p>
+                    <div class="text-[11px] font-mono text-cyan-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+                        Target: medical.mri.robotic_surgery.core
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aalhee34@gmail.com&item_name=heib12%20Commercial%20License%20-%20Medical%20Robotics&currency_code=USD&amount=9990.00" target="_blank" class="w-full text-center block bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black py-2.5 rounded-xl text-xs shadow-md transition-all">
+                        Buy Enterprise OEM License ($9,990)
+                    </a>
+                    <a href="mailto:alasod5550@gmail.com?subject=Enterprise%20Procurement%20Inquiry%20-%20Medical%20Robotics" class="w-full text-center block py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-[11px] font-mono text-cyan-400 border border-slate-800 transition-all">
+                        Request Corporate Consultation ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Mega Power Grid 380kV -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col justify-between gap-5 transition-all shadow-xl">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl">⚡</span>
+                        <div class="text-right">
+                            <span class="text-emerald-400 font-black text-lg block">$14,990 USD</span>
+                            <span class="text-[11px] font-mono text-slate-400">Sandbox: $799 USD</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base text-white">Mega Power Grid & 380kV Substation</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">National 380kV distribution, microsecond frequency synchronization at 60Hz, and 45kA SF6 breaker arc quenching in 1.5ms.</p>
+                    <div class="text-[11px] font-mono text-cyan-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+                        </div>
+                </div>
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aalhee34@gmail.com&item_name=heib12%20Commercial%20License%20-%20Power%20Grid&currency_code=USD&amount=14990.00" target="_blank" class="w-full text-center block bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black py-2.5 rounded-xl text-xs shadow-md transition-all">
+                        Buy Enterprise OEM License ($14,990)
+                    </a>
+                    <a href="mailto:alasod5550@gmail.com?subject=Enterprise%20Procurement%20Inquiry%20-%20Power%20Grid" class="w-full text-center block py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-[11px] font-mono text-cyan-400 border border-slate-800 transition-all">
+                        Request Corporate Consultation ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: Multi-Currency Global ATM -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col justify-between gap-5 transition-all shadow-xl">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl">🏧</span>
+                        <div class="text-right">
+                            <span class="text-emerald-400 font-black text-lg block">$4,990 USD</span>
+                            <span class="text-[11px] font-mono text-slate-400">Sandbox: $299 USD</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base text-white">Multi-Currency Global ATM Vault</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Multi-currency optical spectral banknote verification, FIPS 140-3 quantum HSM encryption, and seismic anti-tamper ink detonation.</p>
+                    <div class="text-[11px] font-mono text-cyan-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+                        Target: fintech.atm.multi_currency.vault
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aalhee34@gmail.com&item_name=heib12%20Commercial%20License%20-%20Fintech%20ATM&currency_code=USD&amount=4990.00" target="_blank" class="w-full text-center block bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black py-2.5 rounded-xl text-xs shadow-md transition-all">
+                        Buy Enterprise OEM License ($4,990)
+                    </a>
+                    <a href="mailto:alasod5550@gmail.com?subject=Enterprise%20Procurement%20Inquiry%20-%20Fintech%20ATM" class="w-full text-center block py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-[11px] font-mono text-cyan-400 border border-slate-800 transition-all">
+                        Request Corporate Consultation ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6: Supersonic Fighter Avionics -->
+            <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-2xl flex flex-col justify-between gap-5 transition-all shadow-xl">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl">✈️</span>
+                        <div class="text-right">
+                            <span class="text-emerald-400 font-black text-lg block">$24,990 USD</span>
+                            <span class="text-[11px] font-mono text-slate-400">Sandbox: $1,499 USD</span>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-base text-white">Supersonic Avionics & Fly-by-Wire</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Mach 2.4 supersonic flight control, 3D thrust vectoring nozzles, G-LOC automatic pilot recovery, and MIL-STD-1553 bus telemetry.</p>
+                    <div class="text-[11px] font-mono text-cyan-400 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+                        Target: aerospace.supersonic_jet.fly_by_wire.v12
+                    </div>
+                </div>
+                <div class="space-y-2 pt-2 border-t border-slate-800">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=aalhee34@gmail.com&item_name=heib12%20Commercial%20License%20-%20Supersonic%20Avionics&currency_code=USD&amount=24990.00" target="_blank" class="w-full text-center block bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black py-2.5 rounded-xl text-xs shadow-md transition-all">
+                        Buy Enterprise OEM License ($24,990)
+                    </a>
+                    <a href="mailto:alasod5550@gmail.com?subject=Enterprise%20Procurement%20Inquiry%20-%20Supersonic%20Avionics" class="w-full text-center block py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-[11px] font-mono text-cyan-400 border border-slate-800 transition-all">
+                        Request Corporate Consultation ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-800/80 bg-slate-900/60 py-8 text-center text-xs text-slate-500 space-y-2">
+        <p>heib12 Universal Sovereign Operating System & Industrial Systems Language</p>
+        <p class="font-mono text-slate-400">
+            Founder & Chief Architect: <strong>SALH86</strong> | Verified PayPal: <span class="text-emerald-400">aalhee34@gmail.com</span> | Corporatehref="mailto:alasod5550@gmail.com" class="text-cyan-400 hover:underline">alasod5550@gmail.com</a>
+        </p>
+        <p class="text-[10px] text-slate-600">© 2026 heib12. All Industrial Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
